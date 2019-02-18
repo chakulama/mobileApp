@@ -6,7 +6,23 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content padding class="image-bg">
+    
+  
+  <ion-list>
+    <ion-item>
+     
+      <ion-input type="text" value="" placeholder="Username" required [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+     
+      <ion-input type="password" placeholder="Password" required [(ngModel)]="password" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Show Password</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="Autentificar();" color="primary">Login</ion-button>
+ 
 </ion-content>
