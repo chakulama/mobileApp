@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import {HttpClient,HttpHeaders} from '@angular/common/http';
+import {ProfesorPage} from '../profesor/profesor.page';
 
 @Component({
   selector: 'app-home',
@@ -22,8 +23,12 @@ export class HomePage {
                                                   persona=> {
                                                     if (persona != null)
                                                     {
-                                                      if (persona.rol ==="Profesor")
-                                                        console.log("Profesor")
+                                                      if (persona.rol =="Profesor")
+                                                        {this.navCtrl.navigateForward("/profesor")
+                                                        
+
+                                                          console.log("Profesor")
+                                                        alert("Loged in as Profesor: "+persona.nombre);}
                                                                                                                
                                                       else{
                                                           //window.location.href='./alumno/'+persona.nombre;
@@ -31,6 +36,8 @@ export class HomePage {
                                                           alert("Log in "+persona.nombre);
                                                         }
                                                     }
+                                                    else
+                                                    console.log(persona);
                                                    
                                                       } );
    }
