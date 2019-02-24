@@ -28,7 +28,8 @@ export class HomePage {
                                                         
 
                                                           console.log("Profesor")
-                                                        alert("Loged in as Profesor: "+persona.nombre);}
+                                                        //alert("Loged in as Profesor: "+persona.nombre);
+                                                      }
                                                                                                                
                                                       else{
                                                           //window.location.href='./alumno/'+persona.nombre;
