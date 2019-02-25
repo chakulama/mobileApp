@@ -9,8 +9,7 @@ import {NavController,NavParams} from '@ionic/angular';
   styleUrls: ['./profesor.page.scss'],
 })
 export class ProfesorPage implements OnInit {
-
-  private APIUrl="http://127.0.0.1:3000/personas";
+  private APIUrl="http://192.168.1.39:3000/api/personas";
   lista:any[];
   selecionados:boolean[];
   todos:boolean=false;

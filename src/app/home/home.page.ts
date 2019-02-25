@@ -11,7 +11,7 @@ import {ProfesorPage} from '../profesor/profesor.page';
 export class HomePage {
   nombre:string;
   password:string;
-  private APIUrl="http://127.0.0.1:3000/personas";
+  private APIUrl="http://192.168.1.39:3000/api/personas";
 
   constructor (public navCtrl : NavController,
     private http:HttpClient){}
